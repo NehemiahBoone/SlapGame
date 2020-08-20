@@ -1,6 +1,7 @@
 let health = 100
 let hits = 0
 
+let winStatus = document.getElementById("gameWon")
 let healthStatus = document.getElementById("health")
 let hitStatus = document.getElementById("hits")
 let targetName = document.getElementById("name")
@@ -27,6 +28,12 @@ function kick() {
 }
 
 function update() {
+  if (health <= 0) {
+    health = 0
+    winStatus.hidden = false
+
+  }
+
   healthStatus.innerHTML = `
   ${health}
   `
@@ -37,9 +44,11 @@ function update() {
 }
 
 function restartGame() {
-  if (health == 0) {
+  hits = 0
+  health = 100
+  winStatus.hidden = true
 
-  }
+  update()
 }
 
 update()
