@@ -11,27 +11,55 @@
 
 <body>
   <header class="container-fluid">
-    <div class="row">
-      <div class="col-12">
+
+    <div class="row d-flex flex-row">
+
+      <div class="col-4">
         <h1>Health: <span id="health">--</span></h1>
       </div>
+
+      <div class="col-4">
+        <h1>Name: <span id="name">--</span></h1>
+      </div>
+
+      <div class="col-4">
+        <h1>Hits: <span id="hits">--</span></h1>
+      </div>
+
     </div>
+
   </header>
+
   <main class="container-fluid">
+
     <div class="row">
+
       <div class="col-12 text-center">
         <img src="//placehold.it/200x200" alt="">
       </div>
+
     </div>
 
   </main>
 
   <footer class="container-fluid">
+
     <div class="row">
-      <div class="col-12 text-center">
+
+      <div class="col-4 text-center">
         <button type="button" class="btn btn-primary button" onClick="slap()">Slap</button>
       </div>
+
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary button" onClick="punch()">Punch</button>
+      </div>
+
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary button" onClick="kick()">Kick</button>
+      </div>
+
     </div>
+
   </footer>
 
   <script src="game.js"></script>
